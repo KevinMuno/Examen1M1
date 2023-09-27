@@ -10,24 +10,22 @@ using System.Windows.Forms;
 
 namespace Examen1M1
 {
-    public partial class frmEstudianteRegular : Form
+    public partial class frmEstudiantePregrado : Form
     {
-
-        public frmEstudianteRegular()
+        public frmEstudiantePregrado()
         {
             InitializeComponent();
         }
-
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            Promedio promedio = new Promedio();
-            promedio.Evaluacion1 = double.Parse(txtEva1.Text);
-            promedio.Evaluacion2 = double.Parse(txtEva2.Text);
-            promedio.Evaluacion3 = double.Parse(txtEva3.Text);
-            promedio.Actitudinal = double.Parse(txtActitudinal.Text);
+            PromedioProgramacion promedioProgramacion = new PromedioProgramacion();
+            promedioProgramacion.Evaluacion1 = double.Parse(txtEva1.Text);
+            promedioProgramacion.Evaluacion2 = double.Parse(txtEva2.Text);
+            promedioProgramacion.Evaluacion3 = double.Parse(txtEva3.Text);
+            promedioProgramacion.Actitudinal = double.Parse(txtActitudinal.Text);
 
-            double r = promedio.CalcularPromedio();
-            string c = promedio.Condicion();
+            double r = promedioProgramacion.CalcularPromedio();
+            string c = promedioProgramacion.Condicion();
 
 
             // Datos en el ListView
@@ -197,8 +195,10 @@ namespace Examen1M1
             txtEva3.Clear();
             txtActitudinal.Clear();
             txtEstudiante.Focus();
-
-
         }
     }
 }
+
+
+
+

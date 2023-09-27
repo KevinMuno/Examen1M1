@@ -22,5 +22,11 @@ namespace Examen1M1
             frmEstudianteRegular FrmEstudianteRegular = new frmEstudianteRegular();
             FrmEstudianteRegular.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmEstudiantePregrado FrmEstudiantePregrado = new frmEstudiantePregrado();
+            FrmEstudiantePregrado.ShowDialog();
+        }
     }
 }

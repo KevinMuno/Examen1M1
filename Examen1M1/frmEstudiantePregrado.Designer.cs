@@ -1,6 +1,6 @@
 ﻿namespace Examen1M1
 {
-    partial class frmEstudianteRegular
+    partial class frmEstudiantePregrado
     {
         /// <summary>
         /// Required designer variable.
@@ -42,8 +42,6 @@
             txtEva1 = new TextBox();
             txtEstudiante = new TextBox();
             label2 = new Label();
-            lbEstadisticas = new ListBox();
-            label7 = new Label();
             lvDetalles = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
@@ -52,6 +50,8 @@
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
+            lbEstadisticas = new ListBox();
+            label7 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,10 +59,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(203, 19);
+            label1.Location = new Point(158, 27);
             label1.Name = "label1";
             label1.Size = new Size(514, 30);
-            label1.TabIndex = 0;
+            label1.TabIndex = 1;
             label1.Text = "CONTROL DE EVALUACIONES - PROGRAMACION I";
             // 
             // groupBox1
@@ -79,10 +79,10 @@
             groupBox1.Controls.Add(txtEva1);
             groupBox1.Controls.Add(txtEstudiante);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(18, 64);
+            groupBox1.Location = new Point(12, 60);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(849, 116);
-            groupBox1.TabIndex = 1;
+            groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "DATOS DEL ESTUDIANTE";
             // 
@@ -186,32 +186,14 @@
             label2.TabIndex = 0;
             label2.Text = "ESTUDIANTE";
             // 
-            // lbEstadisticas
-            // 
-            lbEstadisticas.FormattingEnabled = true;
-            lbEstadisticas.ItemHeight = 15;
-            lbEstadisticas.Location = new Point(18, 411);
-            lbEstadisticas.Name = "lbEstadisticas";
-            lbEstadisticas.Size = new Size(846, 124);
-            lbEstadisticas.TabIndex = 3;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(18, 383);
-            label7.Name = "label7";
-            label7.Size = new Size(80, 15);
-            label7.TabIndex = 4;
-            label7.Text = "ESTADISTICAS";
-            // 
             // lvDetalles
             // 
             lvDetalles.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
             lvDetalles.GridLines = true;
-            lvDetalles.Location = new Point(20, 206);
+            lvDetalles.Location = new Point(12, 201);
             lvDetalles.Name = "lvDetalles";
             lvDetalles.Size = new Size(846, 137);
-            lvDetalles.TabIndex = 5;
+            lvDetalles.TabIndex = 12;
             lvDetalles.UseCompatibleStateImageBehavior = false;
             lvDetalles.View = View.Details;
             // 
@@ -247,18 +229,36 @@
             columnHeader7.Text = "CONDICION";
             columnHeader7.Width = 160;
             // 
-            // frmEstudianteRegular
+            // lbEstadisticas
+            // 
+            lbEstadisticas.FormattingEnabled = true;
+            lbEstadisticas.ItemHeight = 15;
+            lbEstadisticas.Location = new Point(12, 397);
+            lbEstadisticas.Name = "lbEstadisticas";
+            lbEstadisticas.Size = new Size(846, 124);
+            lbEstadisticas.TabIndex = 13;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 369);
+            label7.Name = "label7";
+            label7.Size = new Size(80, 15);
+            label7.TabIndex = 14;
+            label7.Text = "ESTADISTICAS";
+            // 
+            // frmEstudiantePregrado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(879, 567);
-            Controls.Add(lvDetalles);
+            ClientSize = new Size(872, 533);
             Controls.Add(label7);
             Controls.Add(lbEstadisticas);
+            Controls.Add(lvDetalles);
             Controls.Add(groupBox1);
             Controls.Add(label1);
-            Name = "frmEstudianteRegular";
-            Text = "frmEstudianteRegular";
+            Name = "frmEstudiantePregrado";
+            Text = "frmEstudiantePregrado";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -281,8 +281,6 @@
         private TextBox txtEva1;
         private TextBox txtEstudiante;
         private Label label2;
-        private ListBox lbEstadisticas;
-        private Label label7;
         private ListView lvDetalles;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
@@ -291,5 +289,7 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
+        private ListBox lbEstadisticas;
+        private Label label7;
     }
 }
